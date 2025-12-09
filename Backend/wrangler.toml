@@ -1,3 +1,7 @@
 name = "hono-quiz-api"
 main = "src/app.ts"
 compatibility_date = "2024-01-01"
+
+[[rules]]
+type = "ESModule"
+globs = ["**/*.ts"]
