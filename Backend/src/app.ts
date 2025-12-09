@@ -4,7 +4,10 @@ import { cors } from 'hono/cors'
 
 const app = new Hono()
 
-app.use('/api/*', cors())
+app.use('/api/*', cors({
+  origin: "https://quiz-app-sage-omega-70.vercel.app",
+  allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+}))
 app.get('/health', (c) => c.json({ status: 'ok' }))
 app.route('/api', quizRouter)
 app.get("/", (c) => {
@@ -13,6 +16,5 @@ app.get("/", (c) => {
     routes: ["/api/quiz", "/api/grade", "/health"]
   });
 });
-
 
 export default app
