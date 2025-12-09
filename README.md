@@ -131,4 +131,4 @@ npm run dev
 
 # Time spent
 
-6 hours
+7 hours
