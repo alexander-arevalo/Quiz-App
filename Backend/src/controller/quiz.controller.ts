@@ -1,5 +1,5 @@
 import { Context } from 'hono'
-import { QuizService } from '../service/quiz.service'
+import { QuizService } from '../services/quiz.service'
 import { validateGradePayload } from '../utils/validation'
 
 const service = new QuizService()

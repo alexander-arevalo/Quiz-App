@@ -1,5 +1,3 @@
-import { AnswerPayload } from '../types/quiz.types'
-
 export const validateGradePayload = (body: any): string | null => {
   if (!body || !Array.isArray(body.answers)) {
     return 'Invalid payload: "answers" must be an array.'

@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import { getQuiz, gradeQuiz } from '../conroller/quiz.conroller'
+import { getQuiz, gradeQuiz } from '../controller/quiz.controller'
 
 export const quizRouter = new Hono()
 
